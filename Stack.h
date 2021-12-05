@@ -1,3 +1,7 @@
+
+/*
+* Predefined size of stack is 50 one can change stack size from here
+*/
 #define MAX_STACK_SIZE 50
 
 
@@ -6,9 +10,9 @@
 */
 typedef enum
 {
-    TRUE = 1,
-    FALSE = 0
-}bool;
+    True = 0,
+    False = 1
+} bool;
 
 
 
@@ -47,10 +51,22 @@ bool peek(int*);
 int Len();
 
 
-bool check_if_full();
+/*
+* using Check_if_full method we can check is stack is full
+*/
+bool Check_if_full();
 
 
-bool check_if_empty();
+/*
+* using Check_if_empty method one can check if stack is empty
+*/
+bool Check_if_empty();
+
+
+/*
+* Out_Stack method is used to print the current stack 
+*/
+void Out_Stack();
 
 
 
