@@ -2,3 +2,5 @@
 *.o
 *.lib
 /user.c
+/practice.h
+/practice.c
