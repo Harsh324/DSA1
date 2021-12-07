@@ -5,41 +5,41 @@ class Queue:
         self.front = 0
         self.back = -1
 
-
+    # Get length of Queue using this method
     def Len(self):
         return len(self.List)
     
-
+    # Private method to check if Queue is empty or not
     def __ifEmpty(self):
         if(self.Len() == 0):
             return True
         return False
     
-
+    # Enqueue elements to the Queue using this method
     def Enqueue(self, Val):
         self.back = self.back + 1
         self.List.insert(self.back , Val)
         self.front = self.front - 1
 
-
+    # Dequeue elements from the Queue using Dequeue method
     def Dequeue(self):
         self.List.pop(self.front)
         self.front = self.front + 1
         self.back = self.back- 1
 
-
+    # Use Front method to get the front of Queue
     def Front(self):
         try:
             return self.List[self.front]
         except IndexError:
-            print(self.front)
+            print(" Index error , hence showing indexx ",self.front)
     
-
+    # Use the Back method to get Back of Queue
     def Back(self):
         try:
             return self.List[self.back]
         except IndexError:
-            print(self.back)
+            print(" Index error , hence showing indexx ",self.back)
         #if(self.Len() != 0):
             #return self.List[self.back]
 
