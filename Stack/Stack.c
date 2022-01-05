@@ -89,7 +89,7 @@ void Out_Stack()
 
 
 // Main function is commented out
-/*
+
 int main()
 {
     create();
@@ -121,4 +121,4 @@ int main()
     Out_Stack();
     destroy();
     return 0;
-}*/
+}
