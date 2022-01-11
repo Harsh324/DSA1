@@ -1,5 +1,6 @@
 
 class Stack:
+    
     # Stack using python list is implemented
     # a list and top of stack is initialised in constructor
     def __init__(self) -> None:
