@@ -12,6 +12,7 @@ int Linear_search(int Arr[], int Len, int Val)
     int Ind = -1;
     for(int i = 0; i < Len; i++)
     {
+        
         if(Arr[i] == Val)
         {
             Ind = i;
