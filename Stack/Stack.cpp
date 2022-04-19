@@ -127,5 +127,21 @@ int main()
         cout<<"\n"<<"\t"<<" Popped "<<Num<<endl;
     St.Print_Stack();
     cout<<St.Size()<<endl;
+    if(St.Pop(&Num))
+        cout<<"\n"<<"\t"<<" Popped "<<Num<<endl;
+
+    if(St.Pop(&Num))
+        cout<<"\n"<<"\t"<<" Popped "<<Num<<endl;
+
+    if(St.Pop(&Num))
+        cout<<"\n"<<"\t"<<" Popped "<<Num<<endl;
+
+    if(St.Pop(&Num))
+        cout<<"\n"<<"\t"<<" Popped "<<Num<<endl;
+
+    if(St.Pop(&Num))
+        cout<<"\n"<<"\t"<<" Popped "<<Num<<endl;
+    else
+        cout<<"Stack is empty"<<endl;
 
 }
