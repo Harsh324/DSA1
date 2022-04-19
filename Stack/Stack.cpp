@@ -34,9 +34,14 @@ namespace Stack_Adt
 
     void Stack::Destroy()
     {
+        if(NULL != Stack_Arr)
+        {
+            free(Stack_Arr);
+            Stack_Arr = NULL;
+        }
         Size_of_Stack = 0;
         Top_of_Stack = -1;
-        free(Stack_Arr);
+        
     }
 
     bool Stack::Push(int Val)
@@ -122,5 +127,21 @@ int main()
         cout<<"\n"<<"\t"<<" Popped "<<Num<<endl;
     St.Print_Stack();
     cout<<St.Size()<<endl;
+    if(St.Pop(&Num))
+        cout<<"\n"<<"\t"<<" Popped "<<Num<<endl;
+
+    if(St.Pop(&Num))
+        cout<<"\n"<<"\t"<<" Popped "<<Num<<endl;
+
+    if(St.Pop(&Num))
+        cout<<"\n"<<"\t"<<" Popped "<<Num<<endl;
+
+    if(St.Pop(&Num))
+        cout<<"\n"<<"\t"<<" Popped "<<Num<<endl;
+
+    if(St.Pop(&Num))
+        cout<<"\n"<<"\t"<<" Popped "<<Num<<endl;
+    else
+        cout<<"Stack is empty"<<endl;
 
 }
